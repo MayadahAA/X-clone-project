@@ -3,7 +3,7 @@ export default function HeaderCard() {
   return (
     <>
       {/* first Header body */}
-      <div className="flex flex-col ml-1 mr-1 bg-indigo-700 text-white h-36">
+      <div className="flex flex-col ml-1 mr-1 bg-indigo-700 text-white h-auto">
         <div className="flex justify-between h-10 p-2">
           <p>Home</p>
           <p>Icon</p>
@@ -12,10 +12,10 @@ export default function HeaderCard() {
         <hr />
 
         {/* img & hent */}
-        <div className="flex flex-col p-2">
+        <div className="flex flex-col p-2 flex-wrap">
           <div className="flex items-center">
             <p className="border rounded-3xl  w-12 h-12 "></p>
-            <p className=" m-2">what's happening ?</p>
+            <textarea className=" m-2 rounded-2xl w-80 h-10 p-2" placeholder="what's happening ?"/>
           </div>
 
           {/* icons for => "upload , ...." */}
