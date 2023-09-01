@@ -5,7 +5,7 @@ export default function Navbar() {
 
     return (
         <>
-           <div className="w-full max-sm:w-36 text-2xl pl-10 flex flex-col justify-start gap-5 h-screen border-r-2 border-slate-800">
+           <div className="w-full max-sm:w-36 text-2xl pl-10 flex flex-col justify-start gap-5 h-screen border-r-2 border-slate-700">
         <img src={Logo} alt="" className="w-7" />
         <div className="flex flex-col gap-5">
           <div className="flex gap-4 items-center">
