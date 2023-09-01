@@ -1,14 +1,14 @@
-import HeaderCard from "../Components/HeaderCard";
-import Navbar from "../Components/Navbar";
-import TweetCard from "../Components/TweetCard";
-import Sidebar from "../Components/sidebar";
+import HeaderCard from "../components/HeaderCard";
+import Navbar from "../components/Navbar";
+import TweetCard from "../components/TweetCard";
+import Sidebar from "../components/sidebar";
 
 
 function Home() {
   return (
     <>
       <div className="flex w-full m-1">
-        <div className="w-1/4 h-screen bg-pink-600"> <Navbar /></div>
+        <div className="w-1/4 h-screen "> <Navbar /></div>
 
         <div className="flex flex-col w-1/2 h-auto">
           <div className=" h-auto  mb-2 "><HeaderCard /></div>
@@ -16,7 +16,7 @@ function Home() {
           <div className=" h-auto  mb-2 mt-1 "><TweetCard /></div>
         </div>
 
-        <div className="w-1/3 bg-blue-700"> <Sidebar /></div>
+        <div className="w-1/3 "> <Sidebar /></div>
       </div>
     </>
   );
