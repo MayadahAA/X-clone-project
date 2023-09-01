@@ -3,7 +3,7 @@ export default function HeaderCard() {
   return (
     <>
       {/* first Header body */}
-      <div className="flex flex-col m-1 bg-indigo-700 text-white h-36">
+      <div className="flex flex-col ml-1 mr-1 bg-indigo-700 text-white h-36">
         <div className="flex justify-between h-10 p-2">
           <p>Home</p>
           <p>Icon</p>
