@@ -5,7 +5,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className='flex flex-col items-center w-full bg-rose-700  '>
+            <div className='flex flex-col items-center w-full bg-sky-950  '>
                 {/* logo */}
                 <div className='flex flex-row w-36 justify-start'>
                     <img src={Logo} alt="" className='w-10 m-5 ' />
@@ -49,7 +49,7 @@ export default function Navbar() {
                         <p>More</p>
                     </div>
                 </div>
-                
+
                 {/* Button Tweet */}
                 <div className='flex justify-around w-60 h-12 bg-cyan-600 rounded-2xl mb-4 cursor-pointer'>
                     <button>Tweet</button>
