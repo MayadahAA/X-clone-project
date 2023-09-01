@@ -5,15 +5,15 @@ export default function Navbar() {
 
     return (
         <>
-           <div className="w-1/6 text-3xl pl-5 flex flex-col justify-start gap-5 h-screen">
-        <img src={Logo} alt="" className="w-2/12" />
+           <div className=" w-full text-2xl pl-10 flex flex-col justify-start gap-5 h-screen border-r-2 border-slate-800">
+        <img src={Logo} alt="" className="w-11" />
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-3">
+          <div className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-9 h-9"
+              className="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -24,12 +24,13 @@ export default function Navbar() {
 
             <h1>Home</h1>
           </div>
-          <div className="flex items-center gap-3">
+
+          <div className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="w-5 h-5"
+              className="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -40,7 +41,8 @@ export default function Navbar() {
 
             <h1>Explore</h1>
           </div>
-          <div className="flex items-center gap-3">
+
+          <div className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -58,7 +60,8 @@ export default function Navbar() {
 
             <h1>Notifications</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -76,10 +79,12 @@ export default function Navbar() {
 
             <h1>Messages</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'> 
             <h1>Lists</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -97,7 +102,8 @@ export default function Navbar() {
 
             <h1>Bookmarks</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,10 +121,13 @@ export default function Navbar() {
 
             <h1>Communities</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
+            <img src={Logo} alt="" className='w-6 h-6'/>
             <h1>Verified</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -136,7 +145,8 @@ export default function Navbar() {
 
             <h1>Profile</h1>
           </div>
-          <div>
+
+          <div className='flex gap-4 items-center'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -154,11 +164,13 @@ export default function Navbar() {
 
             <h1>More</h1>
           </div>
+
           <div>
-            <button className="bg-sky-400 font-medium p-3 w-full text-2xl rounded-full">
+            <button className="bg-sky-500 font-medium p-3 w-3/4 text-xl rounded-full">
               Post
             </button>
           </div>
+          
         </div>
       </div>
         </>
