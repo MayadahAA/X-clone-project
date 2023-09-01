@@ -5,8 +5,8 @@ export default function Navbar() {
 
     return (
         <>
-           <div className=" w-full text-2xl pl-10 flex flex-col justify-start gap-5 h-screen border-r-2 border-slate-800">
-        <img src={Logo} alt="" className="w-11" />
+           <div className="w-full max-sm:w-36 text-2xl pl-10 flex flex-col justify-start gap-5 h-screen border-r-2 border-slate-800">
+        <img src={Logo} alt="" className="w-7" />
         <div className="flex flex-col gap-5">
           <div className="flex gap-4 items-center">
             <svg
@@ -22,7 +22,7 @@ export default function Navbar() {
               />
             </svg>
 
-            <h1>Home</h1>
+            <h1 className='max-sm:hidden'>Home</h1>
           </div>
 
           <div className="flex gap-4 items-center">
@@ -39,7 +39,7 @@ export default function Navbar() {
               />
             </svg>
 
-            <h1>Explore</h1>
+            <h1 className='max-sm:hidden'>Explore</h1>
           </div>
 
           <div className="flex gap-4 items-center">
@@ -58,7 +58,7 @@ export default function Navbar() {
               />
             </svg>
 
-            <h1>Notifications</h1>
+            <h1 className='max-sm:hidden'>Notifications</h1>
           </div>
 
           <div className='flex gap-4 items-center'>
@@ -77,7 +77,7 @@ export default function Navbar() {
               />
             </svg>
 
-            <h1>Messages</h1>
+            <h1 className='max-sm:hidden'>Messages</h1>
           </div>
 
           <div className='flex gap-4 items-center'> 
@@ -134,7 +134,7 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-7 h-7"
             >
               <path
                 stroke-linecap="round"
@@ -153,7 +153,7 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-7 h-7"
             >
               <path
                 stroke-linecap="round"
@@ -170,7 +170,7 @@ export default function Navbar() {
               Post
             </button>
           </div>
-          
+
         </div>
       </div>
         </>
