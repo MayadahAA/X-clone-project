@@ -5,10 +5,13 @@ export default function Navbar() {
 
     return (
         <>
-            <div className='flex flex-col items-center w-full bg-rose-700 gap-8 '>
-                <img src={Logo} alt="" className='w-10 m-5' />
+            <div className='flex flex-col items-center w-full bg-rose-700  '>
 
-                <div className='flex flex-col  h-full w-24 gap-6'>
+                <div className='flex flex-row w-36 justify-start'>
+                    <img src={Logo} alt="" className='w-10 m-5 ' />
+                </div>
+                
+                <div className='flex flex-col  h-full w-24 gap-6 mb-'>
 
                     <div className='flex justify-between'>
                         <p>Icon</p>
