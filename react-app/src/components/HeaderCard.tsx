@@ -4,6 +4,7 @@ type postI = {
   id: string;
   userName: string;
   text: string;
+  isLiked: boolean;
 };
 export default function HeaderCard() {
   const [inputV, setInputV] = useState<postI>();
@@ -13,6 +14,7 @@ export default function HeaderCard() {
       .post(`https://64d8b3c25f9bf5b879ce7999.mockapi.io/posts`, {
         userName: inputV?.userName,
         text: inputV?.text,
+        isLiked: false,
       })
       .then((res) => {
         console.log(res);
@@ -54,6 +56,7 @@ export default function HeaderCard() {
             <div className="flex justify-between items-center ml-12 mr-3">
               <div className="flex justify-around ml-2 w-32 ">
                 <div>
+                  {/* photo */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -70,6 +73,7 @@ export default function HeaderCard() {
                   </svg>
                 </div>
                 <div>
+                  {/* gif */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -87,6 +91,7 @@ export default function HeaderCard() {
                 </div>
                 <p>Icon</p>
               </div>
+              {/* post */}
               <button
                 onClick={post}
                 className="h-8 w-16 rounded-2xl text-center bg-sky-500 cursor-pointer"
