@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import pollI from "../assets/poll.svg";
+
 type postI = {
   id: string | undefined;
   userName: string;
