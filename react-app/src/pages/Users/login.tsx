@@ -4,15 +4,16 @@ import { useNavigate } from "react-router-dom";
 
 
 interface User {
-  id:string
-  username:string,
-  name:string,
+  id: string
+  username: string,
+  password: string,
+  name: string,
 }
 
 const urlUser = 'https://64ec522df9b2b70f2bfa1874.mockapi.io/api/Tweet/users'
 
 export default function Login() {
-  
+
   const navigate = useNavigate();
   const [msg, setMsg] = useState('');
   const [getUser, setUser] = useState<User[]>([])
@@ -23,46 +24,51 @@ export default function Login() {
     password: '',
   })
   // get all users , we need get id of user who login 
-  useEffect( () => {
+  useEffect(() => {
     try {
       axios.get(urlUser)
-      .then((response)=>{
-        setUser(response.data)
-      })
+        .then((response) => {
+          setUser(response.data)
+        })
     } catch (error) {
       console.log(error);
     }
-  },[getUserInput])
- 
-  
+  }, [getUserInput])
+
+
   /*
   get username from user input => we need find id of user by username"ID"
   */
- const username = getUserInput.username
- const password = getUserInput.password
- const user = getUser.find((e)=>e.username == username)
- 
- 
- const users = getUser.map((e)=>e.username == username)
-console.log(users);
+  const username = getUserInput.username
+  const password = getUserInput.password
+  const user = getUser.find((e) => e.username == username)
+
+
+  const users = getUser.find((e) => e.username == username)
+  console.log(users);
 
   const input = () => {
 
-     //Check inputs before login 
-     if (username == '' || password == '') {
+    //Check inputs before login 
+    if (username == '' || password == '') {
       setMsg('Please fill in the fields !')
       return
-    }else if(users)
+    } 
+    else if (users?.username == getUserInput.username && users?.password == getUserInput.password) {
+      //save id user in localStorage
+      localStorage.setItem('id', String(user?.id))
+      //user input
+      localStorage.setItem('username', getUserInput.username)
+      localStorage.setItem('password', getUserInput.password)
 
-    //save id user in localStorage
-    localStorage.setItem('id' , String(user?.id))
-    //user input
-    localStorage.setItem('username' , getUserInput.username)
-    localStorage.setItem('password' , getUserInput.password)
+      navigate('/')
 
-    navigate('/')
+    }else{
+      setMsg('username or password is incorrect!')
+    }
+
   }
-//-------------------------------------------------------------
+  //-------------------------------------------------------------
 
   return (
     <>
