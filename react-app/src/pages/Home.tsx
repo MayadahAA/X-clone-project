@@ -1,10 +1,13 @@
-import HeaderCard from "../components/HeaderCard";
+import HeaderCard from "../Hooks/HeaderCard";
 import Navbar from "../components/Navbar";
-import TweetCard from "../components/TweetCard";
+import TweetCard from "../Hooks/TweetCard";
 import Sidebar from "../components/sidebar";
 
 
 function Home() {
+
+  
+
   return (
     <>
       <div className="flex w-full m-1">
