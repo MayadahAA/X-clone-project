@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <div className="flex w-full m-1">
-        <div className="w-1/4 h-screen "> <Navbar /></div>
+        <div className="w-80 h-screen "> <Navbar /></div>
 
         <div className="flex flex-col w-1/2 h-auto">
           <div className=" h-auto  mb-2 "><HeaderCard /></div>
