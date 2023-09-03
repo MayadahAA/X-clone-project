@@ -3,26 +3,28 @@ import Logo from "../assets/Xlogo.png";
 
 export default function Navbar() {
   return (
-    <div className="w-1/4 m-0">
+    <div className="w-1/4 m-0 ">
       <div className="w-full text-lg  border-r-2 h-screen border-slate-700 pl-5 flex flex-col gap-5  ">
         <img src={Logo} alt="" className="w-2/12" />
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                clip-rule="evenodd"
-              />
-            </svg>
+          <Link to="/">
+            <div className="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
 
-            <h1>Home</h1>
-          </div>
+              <h1>Home</h1>
+            </div>
+          </Link>
           <div className="flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +77,22 @@ export default function Navbar() {
 
             <h1>Messages</h1>
           </div>
-          <div>
+          <div className="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+              />
+            </svg>
+
             <h1>Lists</h1>
           </div>
           <div className="flex items-center gap-3">
@@ -158,12 +175,14 @@ export default function Navbar() {
 
             <h1>More</h1>
           </div>
-
+<Link to='/'>
           <div>
+
             <button className="bg-sky-500 font-medium p-3 w-3/4 text-xl rounded-full">
               Post
             </button>
           </div>
+          </Link>
         </div>
       </div>
     </div>

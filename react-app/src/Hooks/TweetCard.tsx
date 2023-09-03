@@ -64,7 +64,7 @@ export default function TweetCard() {
         <div key={e.id}>
           <div className="flex flex-col w-full   border-b-2 border-slate-700 py-2 h-auto">
             <div className="flex flex-col  w-fit">
-              <div className="flex justify-between gap-10 p-10  items-center ">
+              <div className="flex justify-between gap-10 p-1  items-center ">
                 {/* User Info => "Name , username , tweet" */}
                 <div className="flex items-center w-full ">
                   <p className="border rounded-3xl  w-12 h-12 "></p>
