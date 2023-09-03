@@ -157,7 +157,6 @@ export default function TweetCard() {
                   </button>
                 </div>
 
-                <p>icon</p>
               </div>
             </div>
           </div>

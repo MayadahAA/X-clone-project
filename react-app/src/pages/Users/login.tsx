@@ -73,17 +73,20 @@ export default function Login() {
   return (
     <>
 
-      <div className="flex justify-center items-center w-full h-screen text-black">
-        <div className="flex flex-col gap-2 justify-center items-center h-52 w-72 bg-slate-600">
+<div className="flex justify-center items-center w-full h-screen ">
+      <div className="flex flex-col justify-around items-center w-1/3 h-1/2 bg-slate-700 rounded-lg">
           <p>{msg}</p>
+          <div className="flex flex-col gap-4">
+
           <div>
-            <input placeholder="Username" onChange={(e) => settUserInput({ ...getUserInput, username: e.target.value })} type="text" />
+            <input  className="bg-slate-800/80 w-full p-2 rounded-md"  placeholder="Username" onChange={(e) => settUserInput({ ...getUserInput, username: e.target.value })} type="text" />
           </div>
           <div>
-            <input placeholder="password" onChange={(e) => settUserInput({ ...getUserInput, password: e.target.value })} type="text" />
+            <input  className="bg-slate-800/80 w-full p-2 rounded-md"  placeholder="password" onChange={(e) => settUserInput({ ...getUserInput, password: e.target.value })} type="text" />
+          </div>
           </div>
 
-          <button onClick={input} className="border h-11 w-28">Reg</button>
+          <button onClick={input} className="bg-slate-900 p-3 rounded-md">Login</button>
         </div>
       </div>
 
