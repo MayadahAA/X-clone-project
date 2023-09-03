@@ -74,16 +74,16 @@ export default function HeaderCard() {
   return (
     <>
       {/* first Header body */}
-      <div className="flex flex-col h-auto border-b-2 border-slate-700">
-        <div className="flex justify-between h-10 p-2">
+      <div className="flex flex-col w-full h-auto border-b-2 border-slate-700">
+        <div className="flex justify-between h-10 p-2 border-b-2 border-slate-700">
           <p>Home</p>
-          <p>Icon</p>
+          {/* <p>Icon</p> */}
         </div>
 
-        <hr />
+        <br />
 
         {/* img & hent */}
-        <div className="flex flex-col py-5 flex-wrap">
+        <div className="flex flex-col py-5 flex-wrap gap-4">
           <div className="flex items-center">
             <div className="border rounded-3xl  w-12 h-12 "></div>
             <textarea
@@ -97,8 +97,8 @@ export default function HeaderCard() {
           </div>
 
           {/* icons for => "upload , ...." */}
-          <div className="flex justify-between items-center ml-12 mr-3">
-            <div className="flex justify-around ml-2 w-32 ">
+          <div className="flex justify-between items-center ">
+            <div className="flex justify-center gap-5 ml-2 w-full ">
               <div>
                 {/* photo */}
                 <svg

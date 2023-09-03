@@ -6,7 +6,7 @@ import Sidebar from "../components/sidebar";
 function Home() {
   return (
     <>
-      <div className="flex mt-4">
+      <div className="flex justify-center gap-5 mt-4">
         <Navbar />
 
         <div className="">
